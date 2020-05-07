@@ -36,4 +36,4 @@ The general detail of everything you need to configure is covered in the **New t
 
 Please see the following pages for guidance on using specific API collections:
 
-- [Custom Forms Using the Entity APIs]()
+- [Custom Forms Using the Entity APIs](working-with-custom-forms-using-entity-apis.md)
