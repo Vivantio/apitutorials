@@ -48,7 +48,3 @@ Use **Get Custom Form Definition Child Details For Master ID** to get further de
 ![postman-request-params](images/postman-request-params.png)
 
 The results of this API include the **Field Definitions** for the custom form.
-
-## Get Custom Field Definition For Definition ID
-
-To retrieve the details of a specific Field Definition 

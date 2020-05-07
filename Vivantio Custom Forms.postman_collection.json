@@ -1,0 +1,369 @@
+{
+	"info": {
+		"_postman_id": "e01ab023-3ffc-4671-8472-1b74aede995d",
+		"name": "Vivantio Custom Forms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Ticket Types",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}Configuration/TicketTypeSelectAll",
+					"host": [
+						"{{base_url}}Configuration"
+					],
+					"path": [
+						"TicketTypeSelectAll"
+					]
+				},
+				"description": "https://webservices-na01.vivantio.com/Help/Api/POST-api-Configuration-TicketTypeSelectAll"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Custom Form Definition Master Details For Ticket Type ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "37dd2d77-7ad7-4998-8512-02056e81bd3a",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Id\": 54\r\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}Entity/CustomEntityDefinitionSelectByRecordTypeId",
+					"host": [
+						"{{base_url}}Entity"
+					],
+					"path": [
+						"CustomEntityDefinitionSelectByRecordTypeId"
+					]
+				},
+				"description": "https://webservices-na01.vivantio.com/Help/Api/POST-api-Entity-CustomEntityDefinitionSelectByRecordTypeId"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Custom Form Definition Child Details For Master ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3be62ece-4963-4ab4-a2d0-8cb3ef990a35",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}Entity/CustomEntityDefinitionSelectById?id=9799",
+					"host": [
+						"{{base_url}}Entity"
+					],
+					"path": [
+						"CustomEntityDefinitionSelectById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "9799"
+						}
+					]
+				},
+				"description": "https://webservices-na01.vivantio.com/Help/Api/POST-api-Entity-CustomEntityDefinitionSelectById-id"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Custom Field Definition For Definition ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bc5d9552-fd89-43ca-9c11-bac8f0b90539",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}Entity/CustomEntityFieldDefinitionSelectById/:id",
+					"host": [
+						"{{base_url}}Entity"
+					],
+					"path": [
+						"CustomEntityFieldDefinitionSelectById",
+						":id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": null,
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "13289"
+						}
+					]
+				},
+				"description": "https://webservices-na01.vivantio.com/Help/Api/POST-api-Entity-CustomEntityFieldDefinitionSelectById-id"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Custom Form Definition Master IDs For Ticket Instance ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c4e76eb7-48d0-4a79-b794-a85c072a99d0",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ParentId\": 655984,\r\n  \"SystemArea\": \"Ticket\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}Entity/SelectEntityTypeIdsByParentItem",
+					"host": [
+						"{{base_url}}Entity"
+					],
+					"path": [
+						"SelectEntityTypeIdsByParentItem"
+					]
+				},
+				"description": "https://webservices-na01.vivantio.com/Help/Api/POST-api-Entity-SelectEntityTypeIdsByParentItem"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Custom Form Instance For Ticket Instance ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6cbc042c-8265-4a3f-baaf-d22e02ba18f1",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"TypeId\": 0,\r\n  \"ParentId\": 655984,\r\n  \"SystemArea\": \"Ticket\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}Entity/CustomEntitySelectByTypeIdAndParent",
+					"host": [
+						"{{base_url}}Entity"
+					],
+					"path": [
+						"CustomEntitySelectByTypeIdAndParent"
+					]
+				},
+				"description": "https://webservices-na01.vivantio.com/Help/Api/POST-api-Entity-CustomEntitySelectByTypeIdAndParent"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Custom Form Instance For Form Instance ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f855331a-cfb7-48e3-b8a5-97ddb03322de",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}Entity/CustomEntitySelectById?id=558902",
+					"host": [
+						"{{base_url}}Entity"
+					],
+					"path": [
+						"CustomEntitySelectById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "558902"
+						}
+					]
+				},
+				"description": "https://webservices-na01.vivantio.com/Help/Api/POST-api-Entity-CustomEntitySelectById-id"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Custom Form Instance For Ticket Instance ID Simple",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8b32aba0-a9c6-4b8b-9322-88228e0c1073",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"TypeId\": 0,\r\n  \"ParentId\": 655983,\r\n  \"SystemArea\": \"Ticket\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}Entity/CustomEntitySimplifiedSelectByTypeIdAndParent",
+					"host": [
+						"{{base_url}}Entity"
+					],
+					"path": [
+						"CustomEntitySimplifiedSelectByTypeIdAndParent"
+					]
+				},
+				"description": "https://webservices-na01.vivantio.com/Help/Api/POST-api-Entity-CustomEntitySelectById-id"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{username}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "b2f6205d-1b1b-4634-af74-ecd1bae01071",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b55d3b6a-2a51-40de-84a6-2d60cc55298c",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});",
+					"",
+					"pm.test(\"Successful status is true\", function () {",
+					"    pm.expect(pm.response.json().Successful).to.equal(true);",
+					"});",
+					"",
+					"pm.test(\"No error messages returned\", function () {",
+					"    pm.expect(pm.response.json().ErrorMessages.length).to.equal(0);",
+					"});"
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
