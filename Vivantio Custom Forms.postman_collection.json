@@ -139,8 +139,13 @@
 					],
 					"query": [
 						{
-							"key": "id",
+							"key": "",
 							"value": null,
+							"disabled": true
+						},
+						{
+							"key": null,
+							"value": "",
 							"disabled": true
 						}
 					],
@@ -313,7 +318,7 @@
 						"CustomEntitySimplifiedSelectByTypeIdAndParent"
 					]
 				},
-				"description": "https://webservices-na01.vivantio.com/Help/Api/POST-api-Entity-CustomEntitySelectById-id"
+				"description": "https://webservices-na01.vivantio.com/Help/Api/POST-api-Entity-CustomEntitySimplifiedSelectByTypeIdAndParent"
 			},
 			"response": []
 		}
