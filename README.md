@@ -1,8 +1,6 @@
 # Vivantio Pro / ITSM API Tutorials
 
-This is the home for API tutorials for Vivantio Pro / ITSM. We'll e expanding these tutorials over time so please do let us know what you would like to see here.
-
-We also have a complementary GitHub repo of API samples [here](https://github.com/Vivantio/apisamples) and documentation about the APIs [here](https://github.com/Vivantio/apisamples/wiki).
+This is the home for API tutorials for Vivantio Pro / ITSM. We'll be expanding these tutorials over time so please do let us know what you would like to see here.
 
 ## API Collections with Postman
 
@@ -37,3 +35,9 @@ The general detail of everything you need to configure is covered in the **New t
 Please see the following pages for guidance on using specific API collections:
 
 - [Custom Forms Using the Entity APIs](working-with-custom-forms-using-entity-apis.md)
+
+## Additional Resources
+
+- See our [Samples repo](https://github.com/Vivantio/apisamples) for sample applications that use APIs.
+- See our [API Reference](https://webservices-na01.vivantio.com/Help) pages for a catalogue of supported APIs.
+- See our [API Wiki](https://github.com/Vivantio/apisamples/wiki) for basic details on how to use the APIs.
