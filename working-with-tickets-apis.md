@@ -4,7 +4,7 @@ This document describes how to use the Ticket APIs.
 
 ## Importing the Postman collection
 
-Please see here for the generic details about [importing a postman collection](importing-a-postman-collection.md). The specific file to import for this tutorial is [Vivantio Tickets.postman_collection.json](https://github.com/Vivantio/apitutorials/blob/master/Vivantio%20Tickets.postman_collection.json).
+Please see [here](importing-a-postman-collection.md) for the generic details about importing a postman collection. The specific file to import for this tutorial is [Vivantio Tickets.postman_collection.json](https://github.com/Vivantio/apitutorials/blob/master/Vivantio%20Tickets.postman_collection.json).
 
 ## Core Concepts
 
