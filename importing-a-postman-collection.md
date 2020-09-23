@@ -1,4 +1,4 @@
-# Importing a Postman C ollection
+# Importing a Postman Collection
 
 The collections in the repo are called `Vivantio*.postman_collection.json`. Note that the collections are set to use **Basic Auth** with the **Username** and **Password** being populated from variables set in the Vivantio environment. The collections are populated with three Postman tests:
 
