@@ -4,7 +4,8 @@ This document describes how to use the Entity series of APIs to work with Custom
 
 ## Importing the Postman collection
 
-Please see here for generic [importing a postman collection](importing-a-postman-collection.md)
+Please see [here](importing-a-postman-collection.md) for the generic details about importing a postman collection. The specific file to import for this tutorial is [Vivantio Custom Forms.postman_collection.json](https://github.com/Vivantio/apitutorials/blob/master/Vivantio%20Custom%20Forms.postman_collection.json).
+
 
 ## Core Concepts
 
