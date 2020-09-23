@@ -4,30 +4,14 @@ This document describes how to use the Entity series of APIs to work with Custom
 
 ## Importing the Postman collection
 
-The collection in the repo is called `Vivantio Custom Form.postman_collection.json`. Note that the collection is set to use **Basic Auth** with the **Username** and **Password** being populated from variables set in the Vivantio environment. The collection is populated with three Postman tests:
-
-```JavaScript
-pm.test("Status code is 200", function () {
-    pm.response.to.have.status(200);
-});
-
-pm.test("Successful status is true", function () {
-    pm.expect(pm.response.json().Successful).to.equal(true);
-});
-
-pm.test("No error messages returned", function () {
-    pm.expect(pm.response.json().ErrorMessages.length).to.equal(0);
-});
-```
-
-These tests should be passing green for a successful API call.
+Please see here for generic [importing a postman collection](importing-a-postman-collection.md)
 
 ## Core Concepts
 
 To work successfully with Custom Forms it's important to distinguish between the following:
 
 - Custom Form *Definitions*: these are the definitions of custom forms that are created for use with a specific ticket type.
-- Custom Form *Instances*: these are instances of where a custom form has been used by a ticket item and custom form data is associated with that tocket item.
+- Custom Form *Instances*: these are instances of where a custom form has been used by a ticket item and custom form data is associated with that ticket item.
 
 ## Get All Ticket Types
 
