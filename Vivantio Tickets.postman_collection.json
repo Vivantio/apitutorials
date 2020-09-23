@@ -1,0 +1,319 @@
+{
+	"info": {
+		"_postman_id": "43e24ea1-e024-4243-9ebe-8d59cbc9d2c7",
+		"name": "Vivantio Tickets",
+		"description": "This is sample API to get the tickets in the ITSM tool",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Single Ticket by Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Ticket/SelectById?id=10225",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Ticket",
+						"SelectById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "10225"
+						}
+					]
+				},
+				"description": "Returns a single Ticket"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Configuration/UserSelectAll",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Configuration",
+						"UserSelectAll"
+					]
+				},
+				"description": "Returns all available Users"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All the Actions for a specified ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Ticket/SelectById?id=10225",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Ticket",
+						"SelectById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "10225"
+						}
+					]
+				},
+				"description": "Returns all the Actions for a specified Ticket"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Child Ticket by Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Ticket/SelectChildTicketsByTicketId?id=10225",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Ticket",
+						"SelectChildTicketsByTicketId"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "10225"
+						}
+					]
+				},
+				"description": "Returns the Child Tickets of the specified Ticket"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Parent Ticket by Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Ticket/SelectParentTicketsByTicketId?id=10370",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Ticket",
+						"SelectParentTicketsByTicketId"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "10370"
+						}
+					]
+				},
+				"description": "Returns the Parent Tickets of the specified Ticket"
+			},
+			"response": []
+		},
+		{
+			"name": "Get available workflow decisions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Ticket/SelectById?id=10225",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Ticket",
+						"SelectById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "10225"
+						}
+					]
+				},
+				"description": "Returns the available Workflow Decisions for the specified Workflow Step"
+			},
+			"response": []
+		},
+		{
+			"name": "Get List of Tickets matching ID's",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  10404,\r\n  10402,\r\n  10225  \r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Ticket/SelectList",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Ticket",
+						"SelectList"
+					]
+				},
+				"description": "Returns the list of Tickets matching the specified IDs"
+			},
+			"response": []
+		},
+		{
+			"name": "Get SLA Information for the ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Ticket/SLAStageInstanceSelectByTicket/?id=10401",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Ticket",
+						"SLAStageInstanceSelectByTicket",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "10401"
+						}
+					]
+				},
+				"description": "Returns SLA information for the selected Ticket"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{username}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "4eba7372-7f90-4eb0-a918-c2dc64d36845",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b9377801-0e10-455c-a8a7-08711f914924",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});",
+					"",
+					"pm.test(\"Successful status is true\", function () {",
+					"    pm.expect(pm.response.json().Successful).to.equal(true);",
+					"});",
+					"",
+					"pm.test(\"No error messages returned\", function () {",
+					"    pm.expect(pm.response.json().ErrorMessages.length).to.equal(0);",
+					"});"
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
