@@ -1,12 +1,12 @@
-# Vivantio Pro / ITSM API Tutorials
+# Vivantio API Tutorials
 
-This is the home for API tutorials for Vivantio Pro / ITSM. We'll be expanding these tutorials over time so please do let us know what you would like to see here.
+This is the home for API tutorials for Vivantio. We'll be expanding these tutorials over time so please do let us know what you would like to see here.
 
 ## API Collections with Postman
 
 Postman is a popular tool for working with APIs, and caters for those who are consumers of APIs as well as those creating them. Consumers of APIs can call an API from Postman and get to understand how it works in terms of inputs, authorization and so on.
 
-One of the useful things you can do with Postman is create **collections** of API calls that can be exported for others to import and use. This is what we're doing with the Vivantio Pro / ITSM APIs, along with documentation to help you understand how to use the collections.
+One of the useful things you can do with Postman is create **collections** of API calls that can be exported for others to import and use. This is what we're doing with the Vivantio APIs, along with documentation to help you understand how to use the collections.
 
 ## Getting Started with Postman
 
@@ -30,7 +30,7 @@ The general detail of everything you need to configure is covered in the **New t
    1. `password` = *Password*
 1. Navigate to **File** > **Import** and choose the collection file from our repo that you would like to import.
 
-## Working with Vivantio Pro / ITSM API Collections
+## Working with Vivantio API Collections
 
 Please see the following pages for guidance on using specific API collections:
 
@@ -39,6 +39,6 @@ Please see the following pages for guidance on using specific API collections:
 
 ## Additional Resources
 
-- See our [Samples repo](https://github.com/Vivantio/apisamples) for sample applications that use APIs.
+- See our [Code examples repo](https://github.com/Vivantio/apiexamples) for example applications that use APIs.
 - See our [API Reference](https://webservices-na01.vivantio.com/Help) pages for a catalogue of supported APIs.
-- See our [API Wiki](https://github.com/Vivantio/apisamples/wiki) for basic details on how to use the APIs.
+- See our [API Wiki](https://github.com/Vivantio/apiexamples/wiki) for basic details on how to use the APIs.
